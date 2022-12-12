@@ -22,34 +22,24 @@ const showError = () => {
   form.reset()
 }
 
-const div = (num) => (num / 10);
-
-const renderResult = (pokemon) => {
-  
-  const {
-    name, height, weight,types, sprites: {
-      other: {
-        "official-artwork": { front_default },
-      },
+const renderResult = ({name, height, weight, types, sprites: {
+    other: {
+      "official-artwork": { front_default },
     },
-  } = pokemon;
-  if (!pokemon) {
-    showError();
-  } else {
-    container.innerHTML = `
+  },
+}) => {
+    return container.innerHTML = `
             <img src="${front_default}" alt="" class="img-res"></img>
             <div class="pokemon-container">
-                <h2 class="nombre_pokemon"> ${name.toUpperCase()}</h2>
-                <h3 class="type_pokemon">${types.map((typea) => typea.type.name).join(" | ").toUpperCase()}</h3>
-                <div class="alturaYpeso">
-                  <h3>Peso: <span class="peso_pokemon"> ${div(weight)} kg </span></h3>
-                  <h3>Altura: <span class="altura_pokemon">${div(height)} mts</span></h3>
-                </div>
-                
-                
+              <h2 class="nombre_pokemon"> ${name.toUpperCase()}</h2>
+              <h3 class="type_pokemon">${types.map((typ) => typ.type.name).join(" | ").toUpperCase()}</h3>
+              <div class="alturaYpeso">
+                <h3>Peso: <span class="peso_pokemon"> ${weight/10} kg </span></h3>
+                <h3>Altura: <span class="altura_pokemon">${height/10} mts</span></h3>
+              </div> 
+            </div> 
         `;
-  }
-};
+  };
 
 
 const submitSearch = async (e) => {
@@ -59,7 +49,7 @@ const submitSearch = async (e) => {
     showEmptyError();
     return;
   }
-  const searchedpokemon = await requestCity(searchedValue);
+  const searchedpokemon = await requestPokemon(searchedValue);
   renderResult(searchedpokemon);
   form.reset();
 };
