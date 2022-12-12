@@ -16,7 +16,7 @@ const showError = () => {
   container.innerHTML = `
         <img src="./assets/error.png" alt="" class="img-error">
             <div class="pokemon-container">
-                <h2 class="error-title"> No existe una pokemon con el número ingresado, Vuelva a intentar</h2>
+                <h2 class="error-title"> No existe un pokemon con el id ingresado, Vuelva a intentar</h2>
         </div>
         `;
   form.reset()
