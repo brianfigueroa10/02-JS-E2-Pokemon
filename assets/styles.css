@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
 
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +7,7 @@ html {
 }
 
 body {
-    background:rgb(11, 62, 31);
+    /*background:rgb(11, 62, 31);*/
     font-family: "Poppins";
     display: flex;
     justify-content: center;
@@ -20,15 +16,15 @@ body {
     flex-direction: column;
     color: white;
     padding: 1em;
-    
-    
-    
+    background: url(./back0.jpg) center/cover fixed;
+
+
 }
-.seccion{
-    background-color: rgba(28, 28, 28, 0.851);
+
+.seccion {
+    background-color: rgba(48, 68, 57, 0.851);
     padding: 1em;
     border-radius: 10px;
-    /*box-shadow: 0px 0px 40px rgb(22, 20, 20);*/
 
 }
 
@@ -40,7 +36,11 @@ body {
     padding-top: 1em;
 }
 
-.input-number{
+h1 {
+    font-size: 2em;
+}
+
+.input-number {
     width: 80px;
     display: flex;
     background-color: rgb(83, 255, 152);
@@ -57,15 +57,20 @@ body {
     border: 0px solid;
     padding: 10px 40px;
     border-radius: 8px;
-    color:#1d1b1b;
+    color: #1d1b1b;
     font-weight: 600;
     font-size: 13px;
     cursor: pointer;
 }
 
-.submit__btn:hover{
-    background-color: rgb(83, 255, 152);
-    color: white;
+.submit__btn:hover {
+    background-color: rgb(61, 193, 114);
+    color: #ffffff;
+}
+
+.form__label{
+    color: #ffffff;
+    font-weight: 600;
 }
 
 #container {
@@ -80,11 +85,10 @@ body {
 }
 
 .pokemon-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .nombre_pokemon {
@@ -93,7 +97,7 @@ body {
     color: #ffffff;
     font-family: "Poppins";
     align-items: center;
-    text-decoration:underline rgb(31, 156, 81);
+    text-decoration: underline rgb(31, 156, 81);
 }
 
 .error-title {
@@ -105,16 +109,16 @@ body {
 
 .type_pokemon {
     font-family: "Poppins";
-    font-weight:700;
+    font-weight: 700;
     font-size: 21px;
     color: rgb(55, 223, 122);
     letter-spacing: 3px;
 }
 
-.alturaYpeso{
+.alturaYpeso {
     display: flex;
     justify-content: space-between;
-    gap:30px;
+    gap: 30px;
 
 }
 
@@ -125,12 +129,15 @@ h3 {
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
 }
-.peso_pokemon, .altura_pokemon {
+
+.peso_pokemon,
+.altura_pokemon {
     font-weight: 800;
     font-size: 23px;
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
 }
+
 .img-res {
     width: 350px;
     height: 300px;
@@ -138,14 +145,10 @@ h3 {
     border-radius: 10px;
     border: 2px solid rgb(83, 255, 152);
     box-shadow: 0px 0px 40px rgb(83, 255, 152);
-    background-color: rgba(202, 202, 202, 0.836);
-    background: radial-gradient(rgba(90, 90, 90, 0.836), rgba(202, 202, 202, 0.836));
-
+    background: radial-gradient(rgb(91, 98, 95), rgb(0, 0, 0))
 }
+
 .img-error {
     width: 200px;
     height: 200px;
 }
-
-
-
