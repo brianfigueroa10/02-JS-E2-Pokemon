@@ -19,7 +19,7 @@ Este proyecto es una aplicación web sencilla desarrollada con HTML, CSS y JavaS
 1. **Clonar el repositorio:**
 
     ```bash
-    git clone https://github.com/tuusuario/pokemon-api-consumer.git
+    git clone https://github.com/brianfigueroa10/02-JS-E2-Pokemon.git
     ```
 
 2. **Abrir el archivo `index.html` en tu navegador web favorito.**
@@ -30,21 +30,3 @@ Este proyecto es una aplicación web sencilla desarrollada con HTML, CSS y JavaS
 
 1. **Ingresar el ID del Pokémon:** En el campo de entrada, escribe un número que corresponde al ID del Pokémon que deseas buscar.
 2. **Presionar el botón "Buscar":** La aplicación realizará una solicitud a la API de Pokémon y mostrará la información del Pokémon correspondiente.
-
-## Captura de Pantalla
-
-![Captura de Pantalla](ruta/a/tu/captura-de-pantalla.png)
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:
-
-1. **Fork este repositorio.**
-2. **Crea una rama con tu nueva característica (`git checkout -b feature/nueva-caracteristica`).**
-3. **Haz commit de tus cambios (`git commit -m 'Agrega nueva característica'`).**
-4. **Push a la rama (`git push origin feature/nueva-caracteristica`).**
-5. **Abre un Pull Request.**
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
